@@ -331,6 +331,16 @@ footer {
     padding: 0 2rem;
 }
 
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
 .footer-section h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
@@ -1356,9 +1366,21 @@ p {
 
     /* Footer */
     .footer-content {
-        grid-template-columns: 1fr;
+        max-width: 1440px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
+        padding: 0 2rem;
         text-align: center;
+    }
+
+    .footer-section {
+        align-items: center; /* Center all content in footer sections */
+    }
+
+    .footer-logo {
+        margin: 0 auto 1rem auto; /* Center the logo with auto margins */
     }
 
     .social-links {
