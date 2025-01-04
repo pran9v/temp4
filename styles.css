@@ -1089,7 +1089,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://img.freepik.com/free-photo/agave-palm-tree-plant-gray-background_53876-110285.jpg?t=st=1735999382~exp=1736002982~hmac=d869d51a42aca31ba93b2d68bd55557fc638208363a04a9f8d2f21384f2c60c7&w=1060');
+    background-image: url("assets/background.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.9; /* Adjust the opacity value as needed */
