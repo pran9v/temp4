@@ -1,0 +1,72 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Indoor Stand with Grow Lights",
+            "price": 85.42,
+            "description": "8-tier metal plant stand with grow lights, perfect for indoor display.",
+            "image": "https://img.kwcdn.com/product/fancy/ba60fa68-45cf-4a9b-a37a-69a07dd94ef3.jpg?imageView2/2/w/800/q/70/format/webp",
+            "category": "table",
+            "badge": "Bestseller",
+            "features": [
+                "8-tier design",
+                "Height: 62 inches",
+                "S-shaped metal frame",
+                "Grow lights for indoor plants"
+            ],
+            "inStock": true,
+            "freeShipping": true
+        },
+        {
+            "id": "2",
+            "name": "Cherry Blossom Vine String Lights",
+            "price": 13.59,
+            "description": "96 LED string lights with USB controls for flexible, ambient lighting.",
+            "image": "https://img.kwcdn.com/product/fancy/302d8ad7-8218-4c21-ad5e-e78f462a1a3b.jpg?imageView2/2/w/800/q/70/format/webp",
+            "category": "floor",
+            "badge": "Popular",
+            "features": [
+                "96 LED lights",
+                "USB-powered",
+                "8-button control",
+                "Flexible floral branch"
+            ],
+            "inStock": true,
+            "freeShipping": true
+        },
+        {
+            "id": "3",
+            "name": "Tall Plant Stand with Grow Light",
+            "price": 43.17,
+            "description": "9-tier plant stand with grow light and hanging space for multiple plants.",
+            "image": "https://img.kwcdn.com/product/fancy/0e8d5b11-222e-480b-a576-bca9370d4a34.jpg?imageView2/2/w/800/q/70/format/webp",
+            "category": "desk",
+            "badge": "Sale",
+            "features": [
+                "9-tier stand",
+                "Wooden shelves",
+                "Hanging space",
+                "Grow light included"
+            ],
+            "inStock": true,
+            "freeShipping": true
+        },
+        {
+            "id": "4",
+            "name": "Half-Moon Indoor Plant Stands",
+            "price": 107.92,
+            "description": "6-tier half-moon metal plant stand with adjustable hanging lengths.",
+            "image": "https://img.kwcdn.com/product/fancy/44afea8a-c97b-4658-b2a9-b9e1468a8140.jpg?imageView2/2/w/800/q/70/format/webp",
+            "category": "pendant",
+            "badge": "New",
+            "features": [
+                "6-tier design",
+                "Half-moon shape",
+                "Metal structure",
+                "Adjustable hanging length"
+            ],
+            "inStock": true,
+            "freeShipping": true
+        }
+    ]
+}
