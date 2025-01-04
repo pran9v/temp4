@@ -144,6 +144,9 @@ main {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px; /* Add minimum height to ensure consistent card sizes */
 }
 
 .product-card:hover {
@@ -175,7 +178,13 @@ main {
     margin: 0.5rem 0;
 }
 
-.product-card .view-details {
+.product-card .product-description {
+    flex-grow: 1; /* Allow description to take up remaining space */
+    margin-bottom: 1rem; /* Add margin to prevent overlap with button */
+}
+
+.product-card .view-details,
+.product-card .add-to-cart {
     background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
     color: white;
     border: none;
@@ -184,11 +193,15 @@ main {
     font-weight: 500;
     transition: all 0.3s ease;
     width: 80%;
-    margin-top: 1rem;
+    margin: 1rem auto 0;
     font-family: 'Canva Sans', 'Open Sans', sans-serif;
+    position: relative; /* Change from absolute to relative positioning */
+    bottom: auto; /* Remove absolute positioning */
 }
 
-.product-card .view-details:hover {
+
+.product-card .view-details:hover,
+.product-card .add-to-cart:hover {
     background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
     transform: scale(1.05);
 }
@@ -197,13 +210,13 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    padding: 2rem;
+    //padding: 2rem;
     background: white;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     margin-top: 2rem;
+    padding-bottom: 70px;
     max-width: 1440px;
-    margin: 2rem auto;
 }
 
 .product-image img {
@@ -217,8 +230,7 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100%;  /* Take up full height */
-    position: relative;
-    padding-bottom: 70px; /* Add padding at bottom to prevent button overlap */
+    position: relative; /* Add padding at bottom to prevent button overlap */
 }
 
 .product-info h1 {
@@ -249,15 +261,15 @@ main {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     color: white;
     border: none;
-    padding: 1rem 2rem;
     border-radius: 30px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 100%;
+    width: 95%;
     font-family: 'Canva Sans', 'Open Sans', sans-serif;
-    position: absolute;  /* Position absolutely within relative parent */
+    padding: 1rem;
+    margin-top: 1.5rem;
     bottom: 0;          /* Stick to bottom */
     left: 0;            /* Align with left edge */
 }
@@ -1362,6 +1374,9 @@ p {
 
     .product-card h3 {
         font-size: 1.1rem;
+    }
+    .product-card {
+        height: auto;
     }
 
     /* Footer */
